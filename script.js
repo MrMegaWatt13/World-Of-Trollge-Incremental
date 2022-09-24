@@ -87,6 +87,30 @@ function C2(){
     document.getElementById('C2Cost').innerHTML = nextCost;
 };
 
+function C3(){
+    var C3Cost= Math.floor(5 * Math.pow(1,C3Cost));        
+    if(MCups >= C3Cost){                                                                                                                                        
+        MCups = MCups - C3Cost,                                                         
+        document.getElementById('MCups').innerHTML = MCups;    
+        document.getElementById('SCups').innerHTML = SCups;
+        gainSCup();            
+    };
+    var nextCost = Math.floor(5 * Math.pow(1,C3Cost));       
+    document.getElementById('C3Cost').innerHTML = nextCost;
+};
+
+function C4(){
+    var C4Cost= Math.floor(7 * Math.pow(1,C4Cost));        
+    if(SCups >= C4Cost){                                                                                                                                        
+        SCups = SCups - C4Cost,                                                         
+        document.getElementById('SCups').innerHTML = SCups;    
+        document.getElementById('NE').innerHTML = NE;
+        gainNE();            
+    };
+    var nextCost = Math.floor(7 * Math.pow(1,C4Cost));       
+    document.getElementById('C4Cost').innerHTML = nextCost;
+};
+
 //Trolls-------------------------------------------------------------------
 
 
