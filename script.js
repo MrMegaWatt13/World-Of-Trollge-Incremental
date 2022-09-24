@@ -37,6 +37,56 @@ var Trolls = 0;
     document.getElementById("Trolls").innerHTML = Trolls;
 }; 
 
+window.setInterval(function(){
+    
+    gainOCup(); 
+    
+}, 1000);
+window.setInterval(function(){
+    
+    gainBCup(); 
+    
+}, 10000);
+window.setInterval(function(){
+    
+    gainMCup(); 
+    
+}, 100000);
+window.setInterval(function(){
+    
+    gainSCup(); 
+    
+}, 1000000);
+window.setInterval(function(){
+    
+    gainNE(); 
+    
+}, 10000000);
+
+function C1(){
+    var C1Cost= Math.floor(5 * Math.pow(1,C1Cost));        
+    if(OCups >= C1Cost){                                                                                                                                        
+        OCups = OCups - C1Cost,                                                         
+        document.getElementById('OCups').innerHTML = OCups;    
+        document.getElementById('BCups').innerHTML = BCups;
+        gainBCup();            
+    };
+    var nextCost = Math.floor(5 * Math.pow(1,C1Cost));       
+    document.getElementById('C1Cost').innerHTML = nextCost;
+};
+
+function C2(){
+    var C2Cost= Math.floor(5 * Math.pow(1,C2Cost));        
+    if(BCups >= C2Cost){                                                                                                                                        
+        BCups = BCups - C2Cost,                                                         
+        document.getElementById('BCups').innerHTML = BCups;    
+        document.getElementById('MCups').innerHTML = MCups;
+        gainMCup();            
+    };
+    var nextCost = Math.floor(5 * Math.pow(1,C2Cost));       
+    document.getElementById('C2Cost').innerHTML = nextCost;
+};
+
 //Trolls-------------------------------------------------------------------
 
 
