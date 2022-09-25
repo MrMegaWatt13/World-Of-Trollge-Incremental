@@ -1,0 +1,66 @@
+button {
+    touch-action: manipulation;
+    border: none;
+    background-color: #00ffff;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Brush Script MT', cursive;
+    cursor: pointer;
+}
+.OB {
+    touch-action: manipulation;           
+    border: none;
+    background-color: #ffffcc;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+.BB {
+    touch-action: manipulation;          
+    border: none;
+    background-color: #ff3333;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+.MB {
+    touch-action: manipulation;          
+    border: none;
+    background-color: #595959;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+.SB {
+    touch-action: manipulation;          
+    border: none;
+    background-color: #262626;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+.NEB {
+    touch-action: manipulation;          
+    border: none;
+    background-color: #28004d;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+h3 {
+  font-family: 'Courier New', monospace;
+}
+p {
+  font-family: 'Courier New', monospace;
+}
