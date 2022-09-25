@@ -32,7 +32,7 @@ var NE = 0;
 }; 
 
 var Trolls = 0;
-    function gainTroll(number){
+    function gainTrolls(number){
     Trolls = Trolls + number;
     document.getElementById("Trolls").innerHTML = Trolls;
 }; 
@@ -111,6 +111,63 @@ function C4(){
     document.getElementById('C4Cost').innerHTML = nextCost;
 };
 
+function TC1(){
+    var TC1Cost= Math.floor(100 * Math.pow(1,TC1Cost));        
+    if(Trolls >= TC1Cost){                                                                                                                                        
+        Trolls = Trolls - TC1Cost,                                                         
+        document.getElementById('Trolls').innerHTML = Trolls;    
+        document.getElementById('OCups').innerHTML = OCups;
+        gainOCup();            
+    };
+    var nextCost = Math.floor(100 * Math.pow(1,TC1Cost));       
+    document.getElementById('TC1Cost').innerHTML = nextCost;
+};
+
+function TC2(){
+    var TC2Cost= Math.floor(500 * Math.pow(1,TC2Cost));        
+    if(Trolls >= TC2Cost){                                                                                                                                        
+        Trolls = Trolls - TC2Cost,                                                         
+        document.getElementById('Trolls').innerHTML = Trolls;    
+        document.getElementById('BCups').innerHTML = BCups;
+        gainBCup();            
+    };
+    var nextCost = Math.floor(500 * Math.pow(1,TC2Cost));       
+    document.getElementById('TC2Cost').innerHTML = nextCost;
+};
+
 //Trolls-------------------------------------------------------------------
 
+var TestTroll = 0;
 
+var Troll = 0;
+
+function getTestTroll(){
+    var TestTrollCost= Math.floor(1 + Math.add(1,TestTrollCost));        
+    if(Trolls >= TestTrollCost){
+        Trolls = Trolls + 1;                                                                                                                                       
+        Trolls = Trolls - TestTrollCost,                                                         
+        document.getElementById('TestTroll').innerHTML = TestTroll;    
+        document.getElementById('Trolls').innerHTML = Trolls;         
+    };
+    var nextCost = Math.floor(1 + Math.add(1,TestTrollCost));       
+    document.getElementById('TestTrollCost').innerHTML = nextCost;
+};
+
+function getTroll(){
+    var TrollCost= Math.floor(100 * Math.pow(1.2,TrollCost));        
+    if(Trolls >= TrollCost){
+        Trolls = Trolls + 1;                                                                                                                                       
+        Trolls = Trolls - TrollCost,                                                         
+        document.getElementById('Troll').innerHTML = Troll;    
+        document.getElementById('Trolls').innerHTML = Trolls;         
+    };
+    var nextCost = Math.floor(100 * Math.pow(1.2,TrollCost));       
+    document.getElementById('TrollCost').innerHTML = nextCost;
+};
+
+window.setInterval(function(){
+ 
+    gainTrolls(1)(Troll);  
+    gainTrolls(100)(TestTroll); 
+    
+}, 1000);
