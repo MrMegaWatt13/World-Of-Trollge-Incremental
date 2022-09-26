@@ -1,11 +1,21 @@
 button {
     touch-action: manipulation;
     border: none;
-    background-color: #00ffff;
-    color: black;
+    background-color: red;
+    color: yellow;
     padding: 14px 28px;
     font-size: 16px;
     font-family: 'Brush Script MT', cursive;
+    cursor: pointer;
+}
+.TB {
+    touch-action: manipulation;           
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
     cursor: pointer;
 }
 .OB {
