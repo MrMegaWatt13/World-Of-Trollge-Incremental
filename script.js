@@ -189,3 +189,9 @@ window.setInterval(function(){
     gainTrolls(Troll);  
     
 }, 1000);
+
+window.setInterval(function(){
+  
+    gainTrolls(TestTroll);  
+    
+}, 10);
