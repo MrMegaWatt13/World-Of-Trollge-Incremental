@@ -39,27 +39,27 @@ var Trolls = 0;
 
 window.setInterval(function(){
     
-    gainOCup(); 
+    gainOCup(1); 
     
 }, 1000);
 window.setInterval(function(){
     
-    gainBCup(); 
+    gainBCup(1); 
     
 }, 10000);
 window.setInterval(function(){
     
-    gainMCup(); 
+    gainMCup(1); 
     
 }, 100000);
 window.setInterval(function(){
     
-    gainSCup(); 
+    gainSCup(1); 
     
 }, 1000000);
 window.setInterval(function(){
     
-    gainNE(); 
+    gainNE(1); 
     
 }, 10000000);
 
@@ -167,7 +167,7 @@ function getTroll(){
 
 window.setInterval(function(){
  
-    gainTrolls(1)(Troll);  
-    gainTrolls(100)(TestTroll); 
+    gainTrolls * 1(Troll);  
+    gainTrolls * 100(TestTroll); 
     
 }, 1000);
