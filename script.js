@@ -52,31 +52,31 @@ var Trolls = 0;
 
 window.setInterval(function(){
     
-    gainOCup(GainCups); 
+    gainOCup(1); 
     
 }, 1000);
 
 window.setInterval(function(){
     
-    gainBCup(GainCups); 
+    gainBCup(1); 
     
 }, 10000);
 
 window.setInterval(function(){
     
-    gainMCup(GainCups); 
+    gainMCup(1); 
     
 }, 100000);
 
 window.setInterval(function(){
     
-    gainSCup(GainCups); 
+    gainSCup(1); 
     
 }, 1000000);
 
 window.setInterval(function(){
     
-    gainNE(GainCups); 
+    gainNE(1); 
     
 }, 10000000);
 
@@ -185,8 +185,7 @@ function getTroll(){
 };
 
 window.setInterval(function(){
- 
+  
     gainTrolls(Troll);  
-    gainTrolls(TestTroll);
     
 }, 1000);
