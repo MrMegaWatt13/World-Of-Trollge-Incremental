@@ -1,6 +1,11 @@
 //Resources-------------------------------------------------------------------
 //O-Oil B-Blood M-Mysterious S-Sorrow NE-Night Essence
 
+var GainCups = 0;
+    function gainGain(number){
+    GainCups = GainCups + number;
+    document.getElementById("GainCups").innerHTML = GainCups;
+};
 var OCups = 0;
     function gainOCup(number){
     OCups = OCups + number;
@@ -39,27 +44,27 @@ var Trolls = 0;
 
 window.setInterval(function(){
     
-    gainOCup(1); 
+    gainOCup(GainCups); 
     
 }, 1000);
 window.setInterval(function(){
     
-    gainBCup(1); 
+    gainBCup(GainCups); 
     
 }, 10000);
 window.setInterval(function(){
     
-    gainMCup(1); 
+    gainMCup(GainCups); 
     
 }, 100000);
 window.setInterval(function(){
     
-    gainSCup(1); 
+    gainSCup(GainCups); 
     
 }, 1000000);
 window.setInterval(function(){
     
-    gainNE(1); 
+    gainNE(GainCups); 
     
 }, 10000000);
 
@@ -135,6 +140,8 @@ function TC2(){
     document.getElementById('TC2Cost').innerHTML = nextCost;
 };
 
+gainGain();
+
 //Trolls-------------------------------------------------------------------
 
 var TestTroll = 0;
@@ -167,7 +174,7 @@ function getTroll(){
 
 window.setInterval(function(){
  
-    gainTrolls * 1(Troll);  
-    gainTrolls * 100(TestTroll); 
+    gainTrolls(Troll);  
+    gainTrolls(100),(TestTroll); 
     
 }, 1000);
