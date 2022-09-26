@@ -47,21 +47,25 @@ window.setInterval(function(){
     gainOCup(GainCups); 
     
 }, 1000);
+
 window.setInterval(function(){
     
     gainBCup(GainCups); 
     
 }, 10000);
+
 window.setInterval(function(){
     
     gainMCup(GainCups); 
     
 }, 100000);
+
 window.setInterval(function(){
     
     gainSCup(GainCups); 
     
 }, 1000000);
+
 window.setInterval(function(){
     
     gainNE(GainCups); 
@@ -149,21 +153,21 @@ var TestTroll = 0;
 var Troll = 0;
 
 function getTestTroll(){
-    var TestTrollCost= Math.floor(1 + Math.add(1,TestTrollCost));        
+    var TestTrollCost= Math.floor(0 + Math.add(0,TestTrollCost));        
     if(Trolls >= TestTrollCost){
-        Trolls = Trolls + 1;                                                                                                                                       
+        TestTroll = TestTroll + 1;                                                                                                                                       
         Trolls = Trolls - TestTrollCost,                                                         
         document.getElementById('TestTroll').innerHTML = TestTroll;    
         document.getElementById('Trolls').innerHTML = Trolls;         
     };
-    var nextCost = Math.floor(1 + Math.add(1,TestTrollCost));       
+    var nextCost = Math.floor(0 + Math.add(0,TestTrollCost));       
     document.getElementById('TestTrollCost').innerHTML = nextCost;
 };
 
 function getTroll(){
     var TrollCost= Math.floor(100 * Math.pow(1.2,TrollCost));        
     if(Trolls >= TrollCost){
-        Trolls = Trolls + 1;                                                                                                                                       
+        Troll = Troll + 1;                                                                                                                                       
         Trolls = Trolls - TrollCost,                                                         
         document.getElementById('Troll').innerHTML = Troll;    
         document.getElementById('Trolls').innerHTML = Trolls;         
